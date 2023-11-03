@@ -1,0 +1,32 @@
+Las clases las he planteado de la siguiente forma:
+
+- Clase Punto, compuesta por dos datos doubles, uno latitud y otro longitud
+-Clase Ruta, compuesta por una lista de Puntos y un código asociado a dicha ruta
+- Clase Almacen_Rutas, compuesta por una lista de rutas
+
+
+
+Con esta orden podemos obtener la imagen resultado__, donde __ es el nombre de la ruta seleccionada. Esta orden se
+ejecuta desde el directorio bin
+  
+  ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion1.ppm ../datos/imagenes/aviones/mascara_avion1.pgm
+
+  
+  Después de ejecutar varias veces el programa, se queda pillado y abriendo y cerrando el fichero almacen_rutas.txt manualmente puede solucionarse.
+  
+ Para obtener las mismas imágenes pero con otros aviones podemos hacer:
+ 
+ ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion2.ppm ../datos/imagenes/aviones/mascara_avion2.pgm
+ 
+ ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion3.ppm ../datos/imagenes/aviones/mascara_avion3.pgm
+ 
+ ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion4.ppm ../datos/imagenes/aviones/mascara_avion4.pgm
+ 
+ ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion5.ppm ../datos/imagenes/aviones/mascara_avion5.pgm
+ 
+  ./rutas_aereas ../datos/paises.txt ../datos/imagenes/mapas/mapa1.ppm ../datos/imagenes/banderas/ ../datos/almacen_rutas.txt ../datos/imagenes/aviones/avion6.ppm ../datos/imagenes/aviones/mascara_avion6.pgm
+ 
+ 
+ 
+
+

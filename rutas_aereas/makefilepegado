@@ -1,0 +1,29 @@
+BIN = bin
+OBJ = obj
+SRC = src
+INC = include
+
+
+$(BIN)/pruebapegado: $(OBJ)/pruebapegado.o $(OBJ)/imagen.o $(OBJ)/imagenES.o
+		echo Creando el ejecutable.
+		g++ $(OBJ)/pruebapegado.o $(OBJ)/imagen.o $(OBJ)/imagenES.o -o $(BIN)/pruebapegado
+
+$(OBJ)/pruebapegado.o: $(SRC)/pruebapegado.cpp $(INC)/imagen.h $(INC)/imagenES.h
+		echo Creando el pruebapegado.o.
+		g++ -g -c -I./$(INC) $(SRC)/pruebapegado.cpp -o $(OBJ)/pruebapegado.o
+
+$(OBJ)/imagen.o: $(SRC)/imagen.cpp $(INC)/imagen.h
+		echo Creando imagen.o.
+		g++ -g -c -I./$(INC) $(SRC)/imagen.cpp -o $(OBJ)/imagen.o
+
+
+$(OBJ)/imagenES.o: $(SRC)/imagenES.cpp $(INC)/imagenES.h
+		echo Creando imagenES.o.
+		g++ -g -c -I./$(INC) $(SRC)/imagenES.cpp -o $(OBJ)/imagenES.o
+
+clean:
+		echo Limpiando.
+		-rm $(OBJ)/* $(BIN)/*
+
+rebuild:	clean $(BIN)/pruebapegado
+

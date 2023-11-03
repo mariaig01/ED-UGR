@@ -1,0 +1,124 @@
+\hypertarget{classAlmacen__Rutas_1_1iterator}{}\doxysection{Almacen\+\_\+\+Rutas\+::iterator Class Reference}
+\label{classAlmacen__Rutas_1_1iterator}\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \& \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_ab89ea4cb083f1ceaeac4c0da08b40536}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Operador ++. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \& \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_a515fbe5b9680eb892e3fb17cca521c24}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Operador --. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRuta}{Ruta}} \& \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_aef42398c0b501bd99384e194c5115879}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Operador $\ast$. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_a0eda76b92a241c87f64a53f7258060d0}{operator==}} (const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Operador ==. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_afa687d652ece75b72874b2bd702cbbee}{operator!=}} (const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Operador !=. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \& \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator_a30b2ec7757de5c29927fe332b13c5469}{operator=}} (const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&it)
+\begin{DoxyCompactList}\small\item\em Operador de asignacion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_adb634362dd1fd2f313b6ced54e700b51}\label{classAlmacen__Rutas_1_1iterator_adb634362dd1fd2f313b6ced54e700b51}} 
+class {\bfseries Almacen\+\_\+\+Rutas}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_afa687d652ece75b72874b2bd702cbbee}\label{classAlmacen__Rutas_1_1iterator_afa687d652ece75b72874b2bd702cbbee}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Almacen\+\_\+\+Rutas\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador !=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si el contenido del iterador es distinto al de i. False en caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_aef42398c0b501bd99384e194c5115879}\label{classAlmacen__Rutas_1_1iterator_aef42398c0b501bd99384e194c5115879}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRuta}{Ruta}}\& Almacen\+\_\+\+Rutas\+::iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador $\ast$. 
+
+\begin{DoxyReturn}{Returns}
+pareja de strings. El primer elemento es el usuario. El segundo elemento es el número de teléfono 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_ab89ea4cb083f1ceaeac4c0da08b40536}\label{classAlmacen__Rutas_1_1iterator_ab89ea4cb083f1ceaeac4c0da08b40536}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}}\& Almacen\+\_\+\+Rutas\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador ++. 
+
+\begin{DoxyReturn}{Returns}
+Iterador al siguiente objeto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_a515fbe5b9680eb892e3fb17cca521c24}\label{classAlmacen__Rutas_1_1iterator_a515fbe5b9680eb892e3fb17cca521c24}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}}\& Almacen\+\_\+\+Rutas\+::iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador --. 
+
+\begin{DoxyReturn}{Returns}
+Iterador al anterior objeto a iterar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_a30b2ec7757de5c29927fe332b13c5469}\label{classAlmacen__Rutas_1_1iterator_a30b2ec7757de5c29927fe332b13c5469}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}}\& Almacen\+\_\+\+Rutas\+::iterator\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de asignacion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & iterador a copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+referencia al objeto con el contenido de it 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_1_1iterator_a0eda76b92a241c87f64a53f7258060d0}\label{classAlmacen__Rutas_1_1iterator_a0eda76b92a241c87f64a53f7258060d0}} 
+\index{Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Almacen\_Rutas::iterator@{Almacen\_Rutas::iterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Almacen\+\_\+\+Rutas\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}} \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador ==. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si el contenido del iterador es igual al de i. False en caso contrario 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/include/\mbox{\hyperlink{almacen__rutas_8h}{almacen\+\_\+rutas.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\hypertarget{almacen__rutas_8h}{}\doxysection{/home/angus/\+Escritorio/rutas\+\_\+aereas/include/almacen\+\_\+rutas.h File Reference}
+\label{almacen__rutas_8h}\index{/home/angus/Escritorio/rutas\_aereas/include/almacen\_rutas.h@{/home/angus/Escritorio/rutas\_aereas/include/almacen\_rutas.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include \char`\"{}Ruta.\+h\char`\"{}}\newline
+Include dependency graph for almacen\+\_\+rutas.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}
+\begin{DoxyCompactList}\small\item\em T.\+D.\+A \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{Almacen\+\_\+\+Rutas\+::iterator}}
+\item 
+class \mbox{\hyperlink{classAlmacen__Rutas_1_1const__iterator}{Almacen\+\_\+\+Rutas\+::const\+\_\+iterator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+María de las Angustias Izquierdo García 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/01-\/10
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}

@@ -1,0 +1,268 @@
+\hypertarget{classImagen}{}\doxysection{Imagen Class Reference}
+\label{classImagen}\index{Imagen@{Imagen}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}{Imagen}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. Construye un objeto con f filas y c columnas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImagen_a5c25efc6e460f6de605942460db48057}{Imagen}} (const \mbox{\hyperlink{classImagen}{Imagen}} \&I)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImagen}{Imagen}} \& \mbox{\hyperlink{classImagen_aeecce0f8947fbefd2468e8b43ac33f4a}{operator=}} (const \mbox{\hyperlink{classImagen}{Imagen}} \&I)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPixel}{Pixel}} \& \mbox{\hyperlink{classImagen_a04727c527d05afce08ef794f124675f9}{operator()}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Devuelve un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}k\mbox{]}. Devuelve un valor por referencia por lo que puede asignar un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structPixel}{Pixel}} \& \mbox{\hyperlink{classImagen_aa3d16fe01d0b8c12d9ba53a45ffee3cd}{operator()}} (int i, int j) const
+\begin{DoxyCompactList}\small\item\em Devuelve un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}k\mbox{]}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImagen_ae6574af4e39a8647b82e02167a86f30c}{Escribir\+Imagen}} (const char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Escribe la imagen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImagen_a3a4b1782bf010d02ded33d1ccd736be4}{Leer\+Imagen}} (const char $\ast$nombre, const string \&nombremascara=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Lee la imagen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImagen_aa3fd5e0c5d3ac1af55cbbd035bae29a1}{Limpiar\+Transp}} ()
+\begin{DoxyCompactList}\small\item\em Pone transp a 0 si es distinto de 0 y de 255. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas}} () const
+\begin{DoxyCompactList}\small\item\em Número de filas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classImagen_a91a9ab285292cd594c54c1119dd93484}{num\+\_\+cols}} () const
+\begin{DoxyCompactList}\small\item\em Número de columnas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classImagen_ae5a805baddaa05b134f0dc2347726559}{Put\+Imagen}} (int posi, int posj, const \mbox{\hyperlink{classImagen}{Imagen}} \&I, Tipo\+\_\+\+Pegado tippegado=O\+P\+A\+CO)
+\begin{DoxyCompactList}\small\item\em Inserta una imagen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classImagen}{Imagen}} \mbox{\hyperlink{classImagen_ac654c71422272cbfea703411daa12c8a}{Extrae\+Imagen}} (int posi, int posj, int dimi, int dimj)
+\begin{DoxyCompactList}\small\item\em Extrae una imagen de las posiciones que recibe como parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImagen_ab2e649aa7a105155c7bfdb846abf0528}\label{classImagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\mbox{\Hypertarget{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}\label{classImagen_a4b397c4a3dc0794cab351f96dc9390fd}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. Construye un objeto con f filas y c columnas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImagen_a5c25efc6e460f6de605942460db48057}\label{classImagen_a5c25efc6e460f6de605942460db48057}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classImagen}{Imagen}} \&}]{I }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}\label{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}} 
+\index{Imagen@{Imagen}!````~Imagen@{$\sim$Imagen}}
+\index{````~Imagen@{$\sim$Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{$\sim$Imagen()}{~Imagen()}}
+{\footnotesize\ttfamily Imagen\+::$\sim$\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classImagen_ae6574af4e39a8647b82e02167a86f30c}\label{classImagen_ae6574af4e39a8647b82e02167a86f30c}} 
+\index{Imagen@{Imagen}!EscribirImagen@{EscribirImagen}}
+\index{EscribirImagen@{EscribirImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{EscribirImagen()}{EscribirImagen()}}
+{\footnotesize\ttfamily void Imagen\+::\+Escribir\+Imagen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Escribe la imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImagen_ac654c71422272cbfea703411daa12c8a}\label{classImagen_ac654c71422272cbfea703411daa12c8a}} 
+\index{Imagen@{Imagen}!ExtraeImagen@{ExtraeImagen}}
+\index{ExtraeImagen@{ExtraeImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{ExtraeImagen()}{ExtraeImagen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImagen}{Imagen}} Imagen\+::\+Extrae\+Imagen (\begin{DoxyParamCaption}\item[{int}]{posi,  }\item[{int}]{posj,  }\item[{int}]{dimi,  }\item[{int}]{dimj }\end{DoxyParamCaption})}
+
+
+
+Extrae una imagen de las posiciones que recibe como parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posi} & \\
+\hline
+{\em posj} & \\
+\hline
+{\em dimi} & \\
+\hline
+{\em dimj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImagen}{Imagen}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a3a4b1782bf010d02ded33d1ccd736be4}\label{classImagen_a3a4b1782bf010d02ded33d1ccd736be4}} 
+\index{Imagen@{Imagen}!LeerImagen@{LeerImagen}}
+\index{LeerImagen@{LeerImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{LeerImagen()}{LeerImagen()}}
+{\footnotesize\ttfamily void Imagen\+::\+Leer\+Imagen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre,  }\item[{const string \&}]{nombremascara = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Lee la imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & \\
+\hline
+{\em nombremascara} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classImagen_aa3fd5e0c5d3ac1af55cbbd035bae29a1}\label{classImagen_aa3fd5e0c5d3ac1af55cbbd035bae29a1}} 
+\index{Imagen@{Imagen}!LimpiarTransp@{LimpiarTransp}}
+\index{LimpiarTransp@{LimpiarTransp}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{LimpiarTransp()}{LimpiarTransp()}}
+{\footnotesize\ttfamily void Imagen\+::\+Limpiar\+Transp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pone transp a 0 si es distinto de 0 y de 255. 
+
+\mbox{\Hypertarget{classImagen_a91a9ab285292cd594c54c1119dd93484}\label{classImagen_a91a9ab285292cd594c54c1119dd93484}} 
+\index{Imagen@{Imagen}!num\_cols@{num\_cols}}
+\index{num\_cols@{num\_cols}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{num\_cols()}{num\_cols()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Número de columnas. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}\label{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}} 
+\index{Imagen@{Imagen}!num\_filas@{num\_filas}}
+\index{num\_filas@{num\_filas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{num\_filas()}{num\_filas()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Número de filas. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a04727c527d05afce08ef794f124675f9}\label{classImagen_a04727c527d05afce08ef794f124675f9}} 
+\index{Imagen@{Imagen}!operator()@{operator()}}
+\index{operator()@{operator()}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPixel}{Pixel}} \& Imagen\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Devuelve un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}k\mbox{]}. Devuelve un valor por referencia por lo que puede asignar un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}j\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structPixel}{Pixel}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_aa3d16fe01d0b8c12d9ba53a45ffee3cd}\label{classImagen_aa3d16fe01d0b8c12d9ba53a45ffee3cd}} 
+\index{Imagen@{Imagen}!operator()@{operator()}}
+\index{operator()@{operator()}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structPixel}{Pixel}} \& Imagen\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve un pixel en la posicion \mbox{[}i\mbox{]}\mbox{[}k\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{structPixel}{Pixel}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_aeecce0f8947fbefd2468e8b43ac33f4a}\label{classImagen_aeecce0f8947fbefd2468e8b43ac33f4a}} 
+\index{Imagen@{Imagen}!operator=@{operator=}}
+\index{operator=@{operator=}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classImagen}{Imagen}} \& Imagen\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classImagen}{Imagen}} \&}]{I }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classImagen}{Imagen}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_ae5a805baddaa05b134f0dc2347726559}\label{classImagen_ae5a805baddaa05b134f0dc2347726559}} 
+\index{Imagen@{Imagen}!PutImagen@{PutImagen}}
+\index{PutImagen@{PutImagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{PutImagen()}{PutImagen()}}
+{\footnotesize\ttfamily void Imagen\+::\+Put\+Imagen (\begin{DoxyParamCaption}\item[{int}]{posi,  }\item[{int}]{posj,  }\item[{const \mbox{\hyperlink{classImagen}{Imagen}} \&}]{I,  }\item[{Tipo\+\_\+\+Pegado}]{tippegado = {\ttfamily OPACO} }\end{DoxyParamCaption})}
+
+
+
+Inserta una imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posi} & F\+Ila en la que se inserta \\
+\hline
+{\em posj} & Columna en la que se inserta \\
+\hline
+{\em I} & \mbox{\hyperlink{classImagen}{Imagen}} a insertar \\
+\hline
+{\em tippegado} & Tipo de pegado \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/include/imagen.\+h\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/src/imagen.\+cpp\end{DoxyCompactItemize}

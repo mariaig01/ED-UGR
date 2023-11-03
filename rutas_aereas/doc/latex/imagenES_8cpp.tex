@@ -1,0 +1,180 @@
+\hypertarget{imagenES_8cpp}{}\doxysection{/home/angus/\+Escritorio/rutas\+\_\+aereas/src/imagen\+ES.cpp File Reference}
+\label{imagenES_8cpp}\index{/home/angus/Escritorio/rutas\_aereas/src/imagenES.cpp@{/home/angus/Escritorio/rutas\_aereas/src/imagenES.cpp}}
+
+
+Fichero con definiciones para la E/S de imágenes.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}imagen\+E\+S.\+h\char`\"{}}\newline
+Include dependency graph for imagen\+E\+S.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{imagenES_8cpp_a16834dd3756f7baf1e5ef710ad7b0e3b}\label{imagenES_8cpp_a16834dd3756f7baf1e5ef710ad7b0e3b}} 
+\mbox{\hyperlink{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}{Tipo\+Imagen}} {\bfseries Leer\+Tipo} (ifstream \&f)
+\item 
+\mbox{\Hypertarget{imagenES_8cpp_a03c8d47b706de803a7959082d73f32d2}\label{imagenES_8cpp_a03c8d47b706de803a7959082d73f32d2}} 
+\mbox{\hyperlink{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}{Tipo\+Imagen}} {\bfseries Leer\+Tipo\+Imagen} (const char nombre\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{imagenES_8cpp_ab090ad072f47dc1ffcfcb900c3334936}\label{imagenES_8cpp_ab090ad072f47dc1ffcfcb900c3334936}} 
+char {\bfseries Saltar\+Separadores} (ifstream \&f)
+\item 
+\mbox{\Hypertarget{imagenES_8cpp_af6fdaef0f7391aa844eea8e2f4b0f235}\label{imagenES_8cpp_af6fdaef0f7391aa844eea8e2f4b0f235}} 
+bool {\bfseries Leer\+Cabecera} (ifstream \&f, int \&filas, int \&columnas)
+\item 
+\mbox{\hyperlink{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}{Tipo\+Imagen}} \mbox{\hyperlink{imagenES_8cpp_a4ba3a13a2951f968a61b3d60b06c8784}{Leer\+Tipo\+Imagen}} (const char nombre\mbox{[}$\,$\mbox{]}, int \&filas, int \&columnas)
+\begin{DoxyCompactList}\small\item\em Consulta el tipo de imagen del archivo y sus dimensiones. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{imagenES_8cpp_a4a6f0611d8fe9496ad0f3525e29684de}{Leer\+Imagen\+P\+PM}} (const char nombre\mbox{[}$\,$\mbox{]}, int \&filas, int \&columnas, unsigned char buffer\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo P\+PM sobre memoria reservada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{imagenES_8cpp_a7989c5e096410d5bb9ac230b53ab1304}{Leer\+Imagen\+P\+GM}} (const char nombre\mbox{[}$\,$\mbox{]}, int \&filas, int \&columnas, unsigned char buffer\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo P\+GM sobre memoria reservada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{imagenES_8cpp_ab5fce69f72746a026ad1db2ba1856b99}{Escribir\+Imagen\+P\+PM}} (const char nombre\mbox{[}$\,$\mbox{]}, const unsigned char datos\mbox{[}$\,$\mbox{]}, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo P\+PM. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{imagenES_8cpp_a4efdf8ab38ebe2538e2400e4b22ce51a}{Escribir\+Imagen\+P\+GM}} (const char nombre\mbox{[}$\,$\mbox{]}, const unsigned char datos\mbox{[}$\,$\mbox{]}, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo P\+GM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichero con definiciones para la E/S de imágenes. 
+
+Permite la E/S de archivos de tipo P\+GM,P\+PM 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{imagenES_8cpp_a4efdf8ab38ebe2538e2400e4b22ce51a}\label{imagenES_8cpp_a4efdf8ab38ebe2538e2400e4b22ce51a}} 
+\index{imagenES.cpp@{imagenES.cpp}!EscribirImagenPGM@{EscribirImagenPGM}}
+\index{EscribirImagenPGM@{EscribirImagenPGM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{\texorpdfstring{EscribirImagenPGM()}{EscribirImagenPGM()}}
+{\footnotesize\ttfamily bool Escribir\+Imagen\+P\+GM (\begin{DoxyParamCaption}\item[{const char}]{nombre\mbox{[}$\,$\mbox{]},  }\item[{const unsigned char}]{datos\mbox{[}$\,$\mbox{]},  }\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Escribe una imagen de tipo P\+GM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre del archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} bytes que corresponden a los valores de los píxeles de la imagen de grises. \\
+\hline
+{\em f} & filas de la imagen \\
+\hline
+{\em c} & columnas de la imagen \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & si ha tenido éxito en la escritura. \\
+\hline
+{\em false} & si se ha producido algún error en la escritura. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{imagenES_8cpp_ab5fce69f72746a026ad1db2ba1856b99}\label{imagenES_8cpp_ab5fce69f72746a026ad1db2ba1856b99}} 
+\index{imagenES.cpp@{imagenES.cpp}!EscribirImagenPPM@{EscribirImagenPPM}}
+\index{EscribirImagenPPM@{EscribirImagenPPM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{\texorpdfstring{EscribirImagenPPM()}{EscribirImagenPPM()}}
+{\footnotesize\ttfamily bool Escribir\+Imagen\+P\+PM (\begin{DoxyParamCaption}\item[{const char}]{nombre\mbox{[}$\,$\mbox{]},  }\item[{const unsigned char}]{datos\mbox{[}$\,$\mbox{]},  }\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Escribe una imagen de tipo P\+PM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre del archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} x 3 bytes que corresponden a los valores de los píxeles de la imagen en formato R\+GB. \\
+\hline
+{\em f} & filas de la imagen \\
+\hline
+{\em c} & columnas de la imagen \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & si ha tenido éxito en la escritura. \\
+\hline
+{\em false} & si se ha producido algún error en la escritura. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{imagenES_8cpp_a7989c5e096410d5bb9ac230b53ab1304}\label{imagenES_8cpp_a7989c5e096410d5bb9ac230b53ab1304}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerImagenPGM@{LeerImagenPGM}}
+\index{LeerImagenPGM@{LeerImagenPGM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{\texorpdfstring{LeerImagenPGM()}{LeerImagenPGM()}}
+{\footnotesize\ttfamily bool Leer\+Imagen\+P\+GM (\begin{DoxyParamCaption}\item[{const char}]{nombre\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{filas,  }\item[{int \&}]{columnas,  }\item[{unsigned char}]{buffer\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Lee una imagen de tipo P\+GM sobre memoria reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre del archivo a leer \\
+\hline
+{\em filas} & Parámetro de salida con las filas de la imagen. \\
+\hline
+{\em columnas} & Parámetro de salida con las columnas de la imagen. \\
+\hline
+{\em buffer} & Zona de memoria para obtener el valor de cada uno de los píxeles como un valor de gris desde la esquina superior izqda a la inferior drcha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+si ha tenido éxito en la lectura 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+buffer debe ser una zona de memoria suficientemente grande como para almacenar {\itshape filas} x {\itshape columnas} bytes de datos de la imagen. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{imagenES_8cpp_a4a6f0611d8fe9496ad0f3525e29684de}\label{imagenES_8cpp_a4a6f0611d8fe9496ad0f3525e29684de}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerImagenPPM@{LeerImagenPPM}}
+\index{LeerImagenPPM@{LeerImagenPPM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{\texorpdfstring{LeerImagenPPM()}{LeerImagenPPM()}}
+{\footnotesize\ttfamily bool Leer\+Imagen\+P\+PM (\begin{DoxyParamCaption}\item[{const char}]{nombre\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{filas,  }\item[{int \&}]{columnas,  }\item[{unsigned char}]{buffer\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Lee una imagen de tipo P\+PM sobre memoria reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & nombre del archivo a leer \\
+\hline
+{\em filas} & Parámetro de salida con las filas de la imagen. \\
+\hline
+{\em columnas} & Parámetro de salida con las columnas de la imagen. \\
+\hline
+{\em buffer} & Zona de memoria para obtener el valor de cada uno de los píxeles como tripletas consecutivas en formato R\+GB (R\+G\+B\+R\+G\+B\+R\+GB...) por filas desde la esquina superior izqda a la inferior drcha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+si ha tenido éxito en la lectura 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+buffer debe ser una zona de memoria suficientemente grande como para almacenar {\itshape filas} x {\itshape columnas} x 3 $\ast$ bytes de datos de la imagen. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{imagenES_8cpp_a4ba3a13a2951f968a61b3d60b06c8784}\label{imagenES_8cpp_a4ba3a13a2951f968a61b3d60b06c8784}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerTipoImagen@{LeerTipoImagen}}
+\index{LeerTipoImagen@{LeerTipoImagen}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{\texorpdfstring{LeerTipoImagen()}{LeerTipoImagen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}{Tipo\+Imagen}} Leer\+Tipo\+Imagen (\begin{DoxyParamCaption}\item[{const char}]{nombre\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{filas,  }\item[{int \&}]{columnas }\end{DoxyParamCaption})}
+
+
+
+Consulta el tipo de imagen del archivo y sus dimensiones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & indica el nombre del archivo de disco a consultar \\
+\hline
+{\em filas} & Parámetro de salida con las filas de la imagen. \\
+\hline
+{\em columnas} & Parámetro de salida con las columnas de la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el tipo de la imagen en el archivo
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{imagenES_8h_a8914f6544a484741b05c092d9e7522ed}{Tipo\+Imagen}} 
+\end{DoxySeeAlso}

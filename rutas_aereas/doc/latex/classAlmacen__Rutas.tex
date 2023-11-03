@@ -1,0 +1,203 @@
+\hypertarget{classAlmacen__Rutas}{}\doxysection{Almacen\+\_\+\+Rutas Class Reference}
+\label{classAlmacen__Rutas}\index{Almacen\_Rutas@{Almacen\_Rutas}}
+
+
+T.\+D.\+A \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}.  
+
+
+
+
+{\ttfamily \#include $<$almacen\+\_\+rutas.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classAlmacen__Rutas_1_1const__iterator}{const\+\_\+iterator}}
+\item 
+class \mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAlmacen__Rutas_a9e069a59069c82b2e66fce091356f512}{Almacen\+\_\+\+Rutas}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRuta}{Ruta}} \mbox{\hyperlink{classAlmacen__Rutas_a1398cfd3871daca945fdbd1f6ba7e108}{Get\+Ruta}} (string \&tipo)
+\begin{DoxyCompactList}\small\item\em Obtenemos la ruta asociada al código que recibe como argumento. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlmacen__Rutas_a5a97796e0b83243a973f095c3e029f3a}{Almacen\+\_\+\+Rutas}} (const \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&alr)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \& \mbox{\hyperlink{classAlmacen__Rutas_a0f973c7a4ba9beab7c6ef2ce3d4621d5}{operator=}} (const \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&alr)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlmacen__Rutas_adeaab4d32731dea80a9584f747cbed22}{Insertar\+Ruta}} (const \mbox{\hyperlink{classRuta}{Ruta}} \&r)
+\begin{DoxyCompactList}\small\item\em Inserta una ruta en el almacén. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlmacen__Rutas_ae1f665fcf2c8dd4502183bcc8a1e7667}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Vacía el objeto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAlmacen__Rutas_a1aec670f447a48d1b2140e404fa78952}\label{classAlmacen__Rutas_a1aec670f447a48d1b2140e404fa78952}} 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{Almacen\+\_\+\+Rutas\+::iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classAlmacen__Rutas_a868ae6c36ada18d6f32493910b752081}\label{classAlmacen__Rutas_a868ae6c36ada18d6f32493910b752081}} 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1iterator}{Almacen\+\_\+\+Rutas\+::iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classAlmacen__Rutas_adf3f0dee31e80a76715e7b8f38ce6281}\label{classAlmacen__Rutas_adf3f0dee31e80a76715e7b8f38ce6281}} 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1const__iterator}{Almacen\+\_\+\+Rutas\+::const\+\_\+iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classAlmacen__Rutas_ab8788e976c5d2c92852512558369684a}\label{classAlmacen__Rutas_ab8788e976c5d2c92852512558369684a}} 
+\mbox{\hyperlink{classAlmacen__Rutas_1_1const__iterator}{Almacen\+\_\+\+Rutas\+::const\+\_\+iterator}} {\bfseries end} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classAlmacen__Rutas_aea7b61842cb59a1dc2b3f423209ae4c9}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&r)
+\begin{DoxyCompactList}\small\item\em Operador de salida. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{classAlmacen__Rutas_aafdc2932b1042c6f37ab06ca0bd043cd}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&r)
+\begin{DoxyCompactList}\small\item\em Operador de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+T.\+D.\+A \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}. 
+
+Una instancia {\itshape c} del tipo de datos abstacto {\ttfamily \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}} es un objeto con dos campos, una lista de {\ttfamily Rutas} y un código asociado a la ruta
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAlmacen__Rutas_a9e069a59069c82b2e66fce091356f512}\label{classAlmacen__Rutas_a9e069a59069c82b2e66fce091356f512}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!Almacen\_Rutas@{Almacen\_Rutas}}
+\index{Almacen\_Rutas@{Almacen\_Rutas}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{Almacen\_Rutas()}{Almacen\_Rutas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Almacen\+\_\+\+Rutas\+::\+Almacen\+\_\+\+Rutas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\mbox{\Hypertarget{classAlmacen__Rutas_a5a97796e0b83243a973f095c3e029f3a}\label{classAlmacen__Rutas_a5a97796e0b83243a973f095c3e029f3a}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!Almacen\_Rutas@{Almacen\_Rutas}}
+\index{Almacen\_Rutas@{Almacen\_Rutas}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{Almacen\_Rutas()}{Almacen\_Rutas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Almacen\+\_\+\+Rutas\+::\+Almacen\+\_\+\+Rutas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&}]{alr }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAlmacen__Rutas_ae1f665fcf2c8dd4502183bcc8a1e7667}\label{classAlmacen__Rutas_ae1f665fcf2c8dd4502183bcc8a1e7667}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!Clear@{Clear}}
+\index{Clear@{Clear}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Almacen\+\_\+\+Rutas\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vacía el objeto. 
+
+\mbox{\Hypertarget{classAlmacen__Rutas_a1398cfd3871daca945fdbd1f6ba7e108}\label{classAlmacen__Rutas_a1398cfd3871daca945fdbd1f6ba7e108}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!GetRuta@{GetRuta}}
+\index{GetRuta@{GetRuta}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{GetRuta()}{GetRuta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRuta}{Ruta}} Almacen\+\_\+\+Rutas\+::\+Get\+Ruta (\begin{DoxyParamCaption}\item[{string \&}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Obtenemos la ruta asociada al código que recibe como argumento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tipo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRuta}{Ruta}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_adeaab4d32731dea80a9584f747cbed22}\label{classAlmacen__Rutas_adeaab4d32731dea80a9584f747cbed22}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!InsertarRuta@{InsertarRuta}}
+\index{InsertarRuta@{InsertarRuta}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{InsertarRuta()}{InsertarRuta()}}
+{\footnotesize\ttfamily void Almacen\+\_\+\+Rutas\+::\+Insertar\+Ruta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRuta}{Ruta}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Inserta una ruta en el almacén. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAlmacen__Rutas_a0f973c7a4ba9beab7c6ef2ce3d4621d5}\label{classAlmacen__Rutas_a0f973c7a4ba9beab7c6ef2ce3d4621d5}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!operator=@{operator=}}
+\index{operator=@{operator=}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \& Almacen\+\_\+\+Rutas\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&}]{alr }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alr} & Asigna alr a ($\ast$this) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}}\& 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classAlmacen__Rutas_aea7b61842cb59a1dc2b3f423209ae4c9}\label{classAlmacen__Rutas_aea7b61842cb59a1dc2b3f423209ae4c9}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de salida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAlmacen__Rutas_aafdc2932b1042c6f37ab06ca0bd043cd}\label{classAlmacen__Rutas_aafdc2932b1042c6f37ab06ca0bd043cd}} 
+\index{Almacen\_Rutas@{Almacen\_Rutas}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Almacen\_Rutas@{Almacen\_Rutas}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{classAlmacen__Rutas}{Almacen\+\_\+\+Rutas}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+istream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/include/\mbox{\hyperlink{almacen__rutas_8h}{almacen\+\_\+rutas.\+h}}\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/src/\mbox{\hyperlink{almacen__rutas_8cpp}{almacen\+\_\+rutas.\+cpp}}\end{DoxyCompactItemize}

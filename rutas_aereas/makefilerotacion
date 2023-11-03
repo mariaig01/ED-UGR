@@ -1,0 +1,30 @@
+
+BIN = bin
+OBJ = obj
+SRC = src
+INC = include
+
+
+$(BIN)/pruebarotacion: $(OBJ)/pruebarotacion.o $(OBJ)/imagen.o $(OBJ)/imagenES.o
+		echo Creando el ejecutable.
+		g++ $(OBJ)/pruebarotacion.o $(OBJ)/imagen.o $(OBJ)/imagenES.o -o $(BIN)/pruebarotacion
+
+$(OBJ)/pruebarotacion.o: $(SRC)/pruebarotacion.cpp $(INC)/imagen.h $(INC)/imagenES.h
+		echo Creando el pruebarotacion.o.
+		g++ -g -c -I./$(INC) $(SRC)/pruebarotacion.cpp -o $(OBJ)/pruebarotacion.o
+
+$(OBJ)/imagen.o: $(SRC)/imagen.cpp $(INC)/imagen.h
+		echo Creando imagen.o.
+		g++ -g -c -I./$(INC) $(SRC)/imagen.cpp -o $(OBJ)/imagen.o
+
+
+$(OBJ)/imagenES.o: $(SRC)/imagenES.cpp $(INC)/imagenES.h
+		echo Creando imagenES.o.
+		g++ -g -c -I./$(INC) $(SRC)/imagenES.cpp -o $(OBJ)/imagenES.o
+
+clean:
+		echo Limpiando.
+		-rm $(OBJ)/* $(BIN)/*
+
+rebuild:	clean $(BIN)/pruebarotacion
+

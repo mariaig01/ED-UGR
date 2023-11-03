@@ -1,0 +1,254 @@
+\hypertarget{classRuta}{}\doxysection{Ruta Class Reference}
+\label{classRuta}\index{Ruta@{Ruta}}
+
+
+T.\+D.\+A \mbox{\hyperlink{classRuta}{Ruta}}.  
+
+
+
+
+{\ttfamily \#include $<$Ruta.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classRuta_1_1const__iterator}{const\+\_\+iterator}}
+\item 
+class \mbox{\hyperlink{classRuta_1_1iterator}{iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRuta_a1020b0a24a1212f30f4f74284bec3597}{Ruta}} ()
+\begin{DoxyCompactList}\small\item\em Construye un objeto \mbox{\hyperlink{classRuta}{Ruta}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRuta_aaddf22deb0f1ac98ef4019531e99e230}{Ruta}} (const \mbox{\hyperlink{classPunto}{Punto}} \&p)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+const string \mbox{\hyperlink{classRuta_acec68580d792cc8c3be6fe2f8b3961a4}{Get\+Codigo}} () const
+\begin{DoxyCompactList}\small\item\em Obtenemos el codigo del objeto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRuta}{Ruta}} \& \mbox{\hyperlink{classRuta_a27339878f214c30f8dd78a56e33f17f5}{operator=}} (const \mbox{\hyperlink{classRuta}{Ruta}} \&p)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRuta_a6d34a1df8092c3fd09c8afcc97376b5c}{Asigna\+Ruta}} (const list$<$ \mbox{\hyperlink{classPunto}{Punto}} $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Asigna una ruta a la ruta de ($\ast$this) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRuta_ab57866fc461cdf5e8046996346a6f284}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Limpia el objeto ruta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRuta_a1f000d9778a761455c30f3ae12a95950}{Asigna\+Codigo}} (const string \&c)
+\begin{DoxyCompactList}\small\item\em Asigna eñ código que recibe como parámetro al código de ($\ast$this) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRuta_aa8faa230c714f95d64ad22abd7709b8e}{Esta\+Punto}} (const \mbox{\hyperlink{classPunto}{Punto}} \&p)
+\begin{DoxyCompactList}\small\item\em Comprueba si un punto se encuentra en la ruta o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRuta_a41cae272415518f517b701b9e3f5e07a}{Insertar\+Punto}} (const \mbox{\hyperlink{classPunto}{Punto}} \&p)
+\begin{DoxyCompactList}\small\item\em Inserta un punto en la ruta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRuta_ab116e5d9799d220b2ba2579af5665b38}\label{classRuta_ab116e5d9799d220b2ba2579af5665b38}} 
+\mbox{\hyperlink{classRuta_1_1iterator}{Ruta\+::iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classRuta_a6998702e19f9289ef5a40c7b353c1e9c}\label{classRuta_a6998702e19f9289ef5a40c7b353c1e9c}} 
+\mbox{\hyperlink{classRuta_1_1iterator}{Ruta\+::iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classRuta_a8ab1e81239cbf04ea067a4402f4f36ea}\label{classRuta_a8ab1e81239cbf04ea067a4402f4f36ea}} 
+\mbox{\hyperlink{classRuta_1_1const__iterator}{Ruta\+::const\+\_\+iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classRuta_a3401f7a84d25b0b2250b6a4e8376f773}\label{classRuta_a3401f7a84d25b0b2250b6a4e8376f773}} 
+\mbox{\hyperlink{classRuta_1_1const__iterator}{Ruta\+::const\+\_\+iterator}} {\bfseries end} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classRuta_a2db7b0a10918b0861d40dfef5b381133}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{classRuta}{Ruta}} \&r)
+\begin{DoxyCompactList}\small\item\em Operador de salida. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{classRuta_ade5b5176a2d6a925bf5f97233132bc23}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{classRuta}{Ruta}} \&r)
+\begin{DoxyCompactList}\small\item\em Operador de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+T.\+D.\+A \mbox{\hyperlink{classRuta}{Ruta}}. 
+
+Una instancia {\itshape c} del tipo de datos abstacto {\ttfamily \mbox{\hyperlink{classRuta}{Ruta}}} es un objeto con dos campos, una lista de {\ttfamily Puntos} y un código asociado a la ruta
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRuta_a1020b0a24a1212f30f4f74284bec3597}\label{classRuta_a1020b0a24a1212f30f4f74284bec3597}} 
+\index{Ruta@{Ruta}!Ruta@{Ruta}}
+\index{Ruta@{Ruta}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{Ruta()}{Ruta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ruta\+::\+Ruta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construye un objeto \mbox{\hyperlink{classRuta}{Ruta}}. 
+
+\mbox{\Hypertarget{classRuta_aaddf22deb0f1ac98ef4019531e99e230}\label{classRuta_aaddf22deb0f1ac98ef4019531e99e230}} 
+\index{Ruta@{Ruta}!Ruta@{Ruta}}
+\index{Ruta@{Ruta}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{Ruta()}{Ruta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ruta\+::\+Ruta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPunto}{Punto}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRuta_a1f000d9778a761455c30f3ae12a95950}\label{classRuta_a1f000d9778a761455c30f3ae12a95950}} 
+\index{Ruta@{Ruta}!AsignaCodigo@{AsignaCodigo}}
+\index{AsignaCodigo@{AsignaCodigo}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{AsignaCodigo()}{AsignaCodigo()}}
+{\footnotesize\ttfamily void Ruta\+::\+Asigna\+Codigo (\begin{DoxyParamCaption}\item[{const string \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Asigna eñ código que recibe como parámetro al código de ($\ast$this) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRuta_a6d34a1df8092c3fd09c8afcc97376b5c}\label{classRuta_a6d34a1df8092c3fd09c8afcc97376b5c}} 
+\index{Ruta@{Ruta}!AsignaRuta@{AsignaRuta}}
+\index{AsignaRuta@{AsignaRuta}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{AsignaRuta()}{AsignaRuta()}}
+{\footnotesize\ttfamily void Ruta\+::\+Asigna\+Ruta (\begin{DoxyParamCaption}\item[{const list$<$ \mbox{\hyperlink{classPunto}{Punto}} $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Asigna una ruta a la ruta de ($\ast$this) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRuta_ab57866fc461cdf5e8046996346a6f284}\label{classRuta_ab57866fc461cdf5e8046996346a6f284}} 
+\index{Ruta@{Ruta}!Clear@{Clear}}
+\index{Clear@{Clear}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Ruta\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpia el objeto ruta. 
+
+\mbox{\Hypertarget{classRuta_aa8faa230c714f95d64ad22abd7709b8e}\label{classRuta_aa8faa230c714f95d64ad22abd7709b8e}} 
+\index{Ruta@{Ruta}!EstaPunto@{EstaPunto}}
+\index{EstaPunto@{EstaPunto}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{EstaPunto()}{EstaPunto()}}
+{\footnotesize\ttfamily bool Ruta\+::\+Esta\+Punto (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPunto}{Punto}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Comprueba si un punto se encuentra en la ruta o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRuta_acec68580d792cc8c3be6fe2f8b3961a4}\label{classRuta_acec68580d792cc8c3be6fe2f8b3961a4}} 
+\index{Ruta@{Ruta}!GetCodigo@{GetCodigo}}
+\index{GetCodigo@{GetCodigo}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{GetCodigo()}{GetCodigo()}}
+{\footnotesize\ttfamily const string Ruta\+::\+Get\+Codigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtenemos el codigo del objeto. 
+
+\begin{DoxyReturn}{Returns}
+const string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRuta_a41cae272415518f517b701b9e3f5e07a}\label{classRuta_a41cae272415518f517b701b9e3f5e07a}} 
+\index{Ruta@{Ruta}!InsertarPunto@{InsertarPunto}}
+\index{InsertarPunto@{InsertarPunto}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{InsertarPunto()}{InsertarPunto()}}
+{\footnotesize\ttfamily void Ruta\+::\+Insertar\+Punto (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPunto}{Punto}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Inserta un punto en la ruta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRuta_a27339878f214c30f8dd78a56e33f17f5}\label{classRuta_a27339878f214c30f8dd78a56e33f17f5}} 
+\index{Ruta@{Ruta}!operator=@{operator=}}
+\index{operator=@{operator=}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRuta}{Ruta}} \& Ruta\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRuta}{Ruta}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRuta}{Ruta}}\& 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classRuta_a2db7b0a10918b0861d40dfef5b381133}\label{classRuta_a2db7b0a10918b0861d40dfef5b381133}} 
+\index{Ruta@{Ruta}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\mbox{\hyperlink{classRuta}{Ruta}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de salida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRuta_ade5b5176a2d6a925bf5f97233132bc23}\label{classRuta_ade5b5176a2d6a925bf5f97233132bc23}} 
+\index{Ruta@{Ruta}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Ruta@{Ruta}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{classRuta}{Ruta}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador de entrada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+istream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/include/\mbox{\hyperlink{Ruta_8h}{Ruta.\+h}}\item 
+/home/angus/\+Escritorio/rutas\+\_\+aereas/src/\mbox{\hyperlink{Ruta_8cpp}{Ruta.\+cpp}}\end{DoxyCompactItemize}
