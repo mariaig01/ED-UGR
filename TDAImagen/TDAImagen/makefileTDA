@@ -1,0 +1,32 @@
+
+BIN = bin
+OBJ = obj
+SRC = src
+INC = inc
+
+
+$(BIN)/main: $(OBJ)/main.o $(OBJ)/Imagen.o $(OBJ)/imagenES.o
+		echo Creando el ejecutable.
+		g++ $(OBJ)/main.o $(OBJ)/Imagen.o $(OBJ)/imagenES.o -o $(BIN)/main
+
+$(OBJ)/main.o: $(SRC)/main.cpp $(INC)/Imagen.h $(INC)/imagenES.h
+		echo Creando el main.o.
+		g++ -g -c -I./$(INC) $(SRC)/main.cpp -o $(OBJ)/main.o
+
+$(OBJ)/Imagen.o: $(SRC)/Imagen.cpp $(INC)/Imagen.h
+		echo Creando Imagen.o.
+		g++ -g -c -I./$(INC) $(SRC)/Imagen.cpp -o $(OBJ)/Imagen.o
+
+
+$(OBJ)/imagenES.o: $(SRC)/imagenES.cpp $(INC)/imagenES.h
+		echo Creando imagenES.o.
+		g++ -g -c -I./$(INC) $(SRC)/imagenES.cpp -o $(OBJ)/imagenES.o
+
+clean:
+		echo Limpiando.
+		-rm $(OBJ)/* $(BIN)/*
+
+rebuild:	clean $(BIN)/main
+
+
+
